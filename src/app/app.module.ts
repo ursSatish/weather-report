@@ -22,7 +22,10 @@ import { WeatherReportComponent } from './weather-report/weather-report.componen
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 1000,
+      positionClass: 'toast-top-right',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
